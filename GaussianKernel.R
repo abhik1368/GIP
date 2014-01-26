@@ -36,10 +36,10 @@ d<-as.matrix(rowSums(t(dti)))
 s<-0
 p<-0
 for (i in 1:length(t)){
-  s<-sum(s+t[i]/727)
+  s<-sum(s+t[i]/length(t))
 }
 for (i in 1:length(d)){
-  p<-sum(p+d[i]/3519)
+  p<-sum(p+d[i]/length(d)
 }
 
 Target_Dist<-as.matrix(dist(dti))
