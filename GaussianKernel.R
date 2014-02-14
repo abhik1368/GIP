@@ -64,9 +64,9 @@ Y<-dti
 d<-solve(Kd+1*diag(nrow(Kd)))
 t<-solve(Kt+1*diag(nrow(Kt)))
 Yhat<-1/2*(Kd%*%d%*%t(Y))+1/2*t(Kt%*%t%*%Y)
-write.csv(Yhat,"datapredict.csv") # saves the data and also return Yhat (predicted matrix)
-
-
+#write.csv(Yhat,"datapredict.csv") # saves the data and also return Yhat (predicted matrix)
+return(Yhat)
+}
 
 
 
